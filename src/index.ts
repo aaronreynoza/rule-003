@@ -34,7 +34,7 @@ export const runServer = async (): Promise<void> => {
   server.addService(Health.service, Health.handler);
   server.addService(Rule.service, Rule.handler);
 
-  await server.bindAsync(`0.0.0.0:${config.grpcport}`, ServerCredentials.createInsecure(), (err: Error | null, bindPort: number) => {
+  await server.bindAsync(`0.0.0.0:${config.grpcPort}`, ServerCredentials.createInsecure(), (err: Error | null, bindPort: number) => {
     if (err) {
       throw err;
     }

@@ -3,3 +3,4 @@ templates
 dist
 build
 node_modules
+.env

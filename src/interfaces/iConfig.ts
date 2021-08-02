@@ -4,9 +4,9 @@ export interface IConfig {
   redisHost: string;
   redisPort: number;
   grpcPort: number;
+  restPort: number;
   logstashHost: string;
   logstashPort: number;
-  networkMap: string;
   functionName: string;
   typologyEndpoint: string;
   apmLogging: boolean;

@@ -15,7 +15,7 @@ export const config: IConfig = {
   logstashHost: <string>process.env.LOGSTASH_HOST,
   logstashPort: parseInt(process.env.LOGSTASH_PORT!, 10),
   grpcPort: parseInt(process.env.GRPC_PORT!, 10) || 50051,
-  networkMap: <string>process.env.NETWORK_MAP,
+  restPort: parseInt(process.env.REST_PORT!, 10) || 3000,
   functionName: <string>process.env.FUNCTION_NAME,
   typologyEndpoint: <string>process.env.RULE_ENDPOINT,
   apmLogging: <boolean>(process.env.APM_LOGGING === 'true'),

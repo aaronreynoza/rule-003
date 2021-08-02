@@ -8,7 +8,7 @@ import { LoggerService } from '../services/logger.service';
  * gRPC HealthCheck Service
  */
 class HealthCheckService {
-  private readonly client: HealthClient = new HealthClient(`localhost:${config.grpcport}`, credentials.createInsecure());
+  private readonly client: HealthClient = new HealthClient(`localhost:${config.grpcPort}`, credentials.createInsecure());
 
   public check(param: HealthCheckRequest, metadata: Metadata = new Metadata()): Promise<HealthCheckResponse> {
     return new Promise((resolve: Resolve<HealthCheckResponse>, reject: Reject): void => {
